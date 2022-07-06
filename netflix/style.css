@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3em;
+  font-size: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Common Css */
+section {
+  border-bottom: 10px solid #333;
+}
+
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 55px;
+  z-index: 10;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 170px;
+}
+
+.signin {
+  float: right;
+}
+
+.signin button {
+  background-color: crimson;
+  border: none;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Section : Welcome */
+.welcome {
+  height: 80vh;
+  background: #fff url(./images/welcome-background.jpg) no-repeat center/cover;
+  position: relative;
+}
+
+.welcome:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+}
+
+.heading h1 {
+  font-size: 64px;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.heading h5 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.heading p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Getstarted */
+.getstarted {
+  display: inline-block;
+  position: relative;
+}
+
+.getstarted input[type=email],
+.getstarted button {
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  vertical-align: middle;
+}
+
+.getstarted input[type=email] {
+  width: 450px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-right: -6px;
+}
+
+.getstarted input[type=email]+span {
+  position: absolute;
+  color: #999;
+  font-size: 16px;
+  left: 10px;
+  top: 13px;
+  transition: .3s;
+  pointer-events: none;
+}
+
+.getstarted input[type=email]:focus+span {
+  transform: translateY(-17px);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.getstarted button {
+  width: 220px;
+  background: crimson;
+  color: #fff;
+  font-size: 26px;
+}
+
+.getstarted button i {
+  vertical-align: middle;
+}
+
+/* Section : Enjoy, Download, Watch, Create */
+.inner {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.desc {
+  width: 52%;
+}
+
+.preview {
+  width: 48%;
+  position: relative;
+}
+
+.desc h2 {
+  font-size: 50px;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.preview img {
+  width: 100%;
+}
+
+.enjoy-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.preview-download {
+  border: 2px solid rgba(255,255,255,.25);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  background: #000;
+  width: 60%;
+  min-width: 280px;
+  padding: 10px;
+}
+
+.boxshot {
+  margin-right: 20px;
+}
+
+.boxshot img {
+  width: 50px;
+}
+
+.boxshot-text {
+  text-align: left;
+}
+
+.boxshot-text div {
+  line-height: 1.3em;
+}
+
+.boxshot-text div:nth-child(1) {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.boxshot-text div:nth-child(2) {
+  color: #0071eb;
+  font-size: 14px;
+}
+
+.preview-download:after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 60px;
+  background: url(./images/download-icon.gif) no-repeat center/contain;
+}
+
+.watch-animation {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.watch-animation video {
+  width: 350px;
+}
+
+/* Section : FAQ */
+.faq-inner {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.faq-inner h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-title {
+  background: #303030;
+  padding: 20px 30px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.faq-title:before {
+  content: '\e9c5';
+  font-family: xeicon;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 30px;
+  transition: .35s;
+}
+
+.faq-title.active {
+  margin-bottom: 2px;
+}
+
+.faq-title.active:before {
+  transform: translateX(5px) rotate(45deg);
+}
+
+.faq-content {
+  background: #303030;
+  padding: 20px 30px;
+  margin-bottom: 8px;
+  display: none;
+}
+
+aside {
+  text-align: center;
+  margin-top: 70px;
+}
+
+aside p {
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 50px 0;
+}
+
+.footer-inner {
+  width: 850px;
+  margin: auto;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5em;
+}
+
+.sitemap {
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
+}
+
+.sitemap h6 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.items {
+  display: inline-block;
+  width: 24.5%;
+  vertical-align: top;
+  line-height: 2.2em;
+}
+
+.items a {
+  color: #777;
+  display: block;
+  text-decoration: none;
+}
+
+.items a:hover {
+  text-decoration: underline;
+}
+
+/* Login Modal */
+.login-modal {
+  position: fixed;
+  background: rgba(0, 0, 0, .6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  display: none;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0, 0, 0, .8);
+  width: 450px;
+  height: auto;
+  font-size: 15px;
+  color: #777;
+  font-weight: 300;
+  padding: 40px;
+}
+
+.btn-close {
+  position: absolute;
+  font-size: 40px;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.login h1 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.login input[type=text],
+.login input[type=password] {
+  background: #333;
+  padding: 20px 15px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.login input[type=button] {
+  font-size: 16px;
+  background-color: crimson;
+  color: #fff;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.login p {
+  line-height: 1.6em;
+}
+
+.login p a {
+  color: royalblue;
+}
+
+.save-info {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.save-info label {
+  float: left;
+}
+
+.save-info span {
+  display: inline-block;
+  padding-left: 3px;
+}
+
+.save-info a {
+  float: right;
+}
+.login a:hover{
+  text-decoration: underline;
+}
+
+
+
+

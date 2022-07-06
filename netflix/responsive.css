@@ -1,0 +1,141 @@
+@media (max-width:768px) {
+  body {
+    font-size: 18px;
+  }
+
+  /* Common CSS */
+  section {
+    padding: 20px;
+  }
+
+  /* Header */
+  header {
+    padding: 35px 20px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  /* Section : Welcome */
+  .welcome {
+    height: 700px;
+  }
+
+  .heading {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .heading h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .heading h5 {
+    font-size: 20px;
+  }
+
+  .heading p {
+    font-size: 18px;
+  }
+
+  /* Getstarted */
+  .getstarted {
+    width: 100%;
+  }
+
+  .getstarted input[type=email],
+  .getstarted button {
+    height: 45px;
+
+  }
+
+  .getstarted input[type=email] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .getstarted input[type=email]+span {
+    top: 12px;
+    font-size: 16px;
+  }
+
+  .getstarted input[type=email]:focus+span {
+    transform: translateY(-12px);
+    font-size: 12px;
+  }
+
+  .getstarted button {
+    width: 160px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  /* Section : Enjo60 Download, Watch, Create */
+  .inner {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .preview {
+    width: 100%;
+  }
+
+  .desc h2 {
+    font-size: 40px;
+  }
+
+  .download .inner .desc,
+  .create .inner .desc {
+    order: 1;
+  }
+
+  .download .inner .preview,
+  .create .inner .preview {
+    order: 2;
+  }
+
+  /* Section : FAQ */
+  .faq-inner {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .faq-title.active:before {
+    transform: translateX(0px) rotate(45deg);
+  }
+
+  .faq-inner h2 {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer-inner {
+    width: 100%;
+    text-align: center;
+  }
+
+  .items {
+    width: 48%;
+  }
+
+  /* Login Modal */
+  .login {
+    width: 100%;
+  }
+}
